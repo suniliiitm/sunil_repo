@@ -12,8 +12,10 @@ public class AdminConsumer implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		RestTemplate rt=new RestTemplate();
 		ResponseEntity<String> resp =rt.getForEntity("http://localhost:7777/provider/show", String.class);
-	     System.out.println(resp.getBody());	
+	     System.out.println(resp.getBody());
+	     System.out.println("hi sunil");
 		System.exit(0);
+		
 	}
 
 }
