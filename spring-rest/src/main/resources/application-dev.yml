@@ -1,0 +1,10 @@
+spring:
+   message: welcome
+      
+server:
+  Port: 9090
+  
+  spring:
+      profiles:
+        active: dev
+
